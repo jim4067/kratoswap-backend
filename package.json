@@ -1,0 +1,31 @@
+{
+  "name": "kratoswap-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -r ./build",
+    "start": "node src",
+    "local": "ts-node src",
+    "local:watch": "nodemon src -e ts, json --exec 'npm run local'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "@types/morgan": "^1.9.4",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  }
+}
