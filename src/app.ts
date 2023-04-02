@@ -2,11 +2,13 @@
 
 import express, { Express, Request, Response } from "express";
 import morgan from "morgan";
+import cors from "cors";
 
 import { collectionRoute } from "./routes/collectionRoute";
 
 const app: Express = express();
 
+app.use(cors<Request>());
 app.use(express.json());
 
 //logging
